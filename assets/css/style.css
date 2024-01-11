@@ -40,7 +40,6 @@ footer {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -4%;
     text-align: center;
 }
 
@@ -151,8 +150,8 @@ footer {
     }
     .control {
         width: 60px;
-        height: 50px;
-        margin: 10px;
+        height: 20px;
+        margin: 7px;
     }
 
     #player-image, #computer-image {
@@ -160,10 +159,10 @@ footer {
         height: auto;
     }
     #menu {
-        padding: 10px 0; 
+        padding: 3px 0; 
     }
     .game-div {
-        margin-top:-6%;
+        margin-top:6%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -197,4 +196,3 @@ footer {
     }
  
 }
-

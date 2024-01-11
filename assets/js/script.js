@@ -32,11 +32,17 @@ startButton.addEventListener("click", function () {
     computerImg.src = "assets/images/rpsls.webp";
   }
   gameStarted = true;
+
   if (userName === "Player") {
-    let inputName = prompt("Please enter your name:", "Your Name Here");
-    if (inputName !== null) {
-      userName = inputName;
-    }
+
+      let inputName = prompt("Please enter your name:");
+      if (inputName !== null) {
+        userName = inputName;
+      } 
+      if(userName.length==0){
+        userName = "Unnamed";
+      }
+
   }
   msg.style.color = "black";
   msg.textContent = "Game Started! Make your choice.";
