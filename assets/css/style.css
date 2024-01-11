@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
+
+html {
+    min-height: 100%;
+    position: relative;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Tangerine', serif;
+    margin: 0;
+    font-size: 58px;
+    text-shadow: 4px 4px 4px #aaa;
+}
+
+header {
+    text-align: center;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    min-height: 80px;
+    padding-top: 5px;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+}
+
+.game-div {
+    flex: 1; /* This will allow the .game-div to expand and contract as needed */
+
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.control {
+    width: 80px;
+    height: 40px;
+    display: inline-block;
+    margin: 20px;
+    width: 80px;
+    height: 80px;
+}
+
+#messages {
+    height: 1px;
+}
+
+#player-image {
+    width: inherit;
+    /* or any size you want */
+    height: auto;
+    /* make sure this maintains the aspect ratio */
+    object-fit: cover;
+    /* this will ensure the images cover the area without stretching */
+
+}
+
+#computer-image {
+    width: inherit;
+    /* or any size you want */
+    height: auto;
+    /* make sure this maintains the aspect ratio */
+    object-fit: cover;
+    /* this will ensure the images cover the area without stretching */
+}
+
+.computer {
+    background-color: lightblue;
+    float: right;
+    width: 35%;
+
+}
+
+.player {
+    background-color: lightblue;
+    float: left;
+    width: 35%;
+}
+#menu{
+  text-align: center;
+  align-items: center;
+  background-color: rgb(182, 196, 223);
+  color: white;
+}
+
+@keyframes winnerAnimation {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+.winner {
+    animation: winnerAnimation 0.5s ease-in-out;
+}
+@media only screen and (max-width: 1280px) {
+
+
+    #player-image, #computer-image {
+        width: 30%; 
+        height: auto;
+    }
+    #menu {
+        padding: 10px 0; 
+    }
+    .game-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .player, .computer {
+        float: none;
+        width: 100%; 
+        background-color: lightblue;
+        margin-bottom: 20px;
+        width: 100%; 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; 
+    }
+
+    .scores {
+        flex: 1; 
+        min-height: 100px;
+    }
+    footer{
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 39px; 
+    padding-top: 5px;
+    text-align: center;
+    color: #fff;
+    background-color: #000; /* Set background color to black */
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 20px; 
+        text-shadow: 2px 2px 2px #aaa;
+    }
+    .control {
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+    }
+
+    #player-image, #computer-image {
+        width: 60%; 
+        height: auto;
+    }
+    #menu {
+        padding: 10px 0; 
+    }
+    .game-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .player, .computer {
+        float: none;
+        width: 100%; 
+        background-color: lightblue;
+        margin-bottom: 20px; 
+        width: 100%; 
+        margin-top: 8%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; 
+    }
+
+    .scores {
+        flex: 1; /* Acest lucru va face ca elementele .scores să umple spațiul disponibil egal */
+        min-height: 100px; /* sau orice altă valoare care să mențină blocurile de aceeași înălțime */
+    }
+    footer{
+    width: 100%;
+    box-sizing: border-box; /* Include padding and border in the width */
+    min-height: 39px; /* Minimum height for the footer */
+    padding-top: 5px; /* Padding at the top */
+    text-align: center; /* Center the text inside the footer */
+    color: #fff; /* Set text color to white */
+    background-color: #000; /* Set background color to black */
+    }
+}
+

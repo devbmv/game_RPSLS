@@ -1,14 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
-    <link href="" rel="stylesheet" type="text/css" />
-</head>
 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rock Paper Scissors Lizard Spock </title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
 <body>
+    <div id="menu">
+        <button aria-lebel="start" menu-choice="0" class="start">Start Game</button>
+    </div>
+
+    <section class="game-div">
+        <div>
+            <p>Your choice:</p>
+            <button aria-lebel="Rock" data-choice="0" class="control">Rock</button>
+            <button aria-lebel="Paper" data-choice="1" class="control">Paper</button>
+            <button aria-lebel="Scissors" data-choice="2" class="control">Scissors</button>
+            <button aria-lebel="Lizard" data-choice="3" class="control">Lizard</button>
+            <button aria-lebel="Spock" data-choice="4" class="control">Spock</button>
+        </div>
+        <div id="messages"></div>
+        <div class="player">
+            <h3 class="scores">Your score:<span id="player-score">0</span></h3>
+            <img id="player-image" src="assets/images/rpsls.webp" alt="Rock Paper  Scissors Lizard Spock">
+        </div>
+        <div class="computer">
+            <h3 class="scores">Computer score: <span id="computer-score">0</span></h3>
+            <img id="computer-image" src="assets/images/rpsls.webp" alt="Rock Paper  Scissors Lizard Spock">
+
+        </div>
+
+    </section>
+    <footer>Rock Paper Scissors Lizard Spock </footer>
+    <script src="assets/js/script.js"></script>
 
 </body>
 
