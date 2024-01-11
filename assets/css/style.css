@@ -37,16 +37,14 @@ footer {
     flex: 1; /* This will allow the .game-div to expand and contract as needed */
 
     text-align: center;
-    width: 80%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5%;
+    margin-top: -4%;
     text-align: center;
 }
 
 .control {
-    width: 80px;
-    height: 40px;
     display: inline-block;
     margin: 20px;
     width: 80px;
@@ -152,7 +150,7 @@ footer {
         text-shadow: 2px 2px 2px #aaa;
     }
     .control {
-        width: 50px;
+        width: 60px;
         height: 50px;
         margin: 10px;
     }
@@ -165,6 +163,7 @@ footer {
         padding: 10px 0; 
     }
     .game-div {
+        margin-top:-6%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -196,5 +195,6 @@ footer {
     color: #fff; /* Set text color to white */
     background-color: #000; /* Set background color to black */
     }
+ 
 }
 
