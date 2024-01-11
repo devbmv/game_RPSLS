@@ -103,31 +103,12 @@ footer {
 @media only screen and (max-width: 1280px) {
 
 
-    #player-image, #computer-image {
-        width: 30%; 
-        height: auto;
-    }
-    #menu {
-        padding: 10px 0; 
-    }
-    .game-div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .player, .computer {
-        float: none;
-        width: 100%; 
+    
+    .player {
         background-color: lightblue;
-        margin-bottom: 20px;
-        width: 100%; 
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center; 
+        float: left;
+        width: 35%;
     }
-
     .scores {
         flex: 1; 
         min-height: 100px;
@@ -143,7 +124,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     body {
         font-size: 20px; 
         text-shadow: 2px 2px 2px #aaa;
