@@ -1,25 +1,30 @@
+/* Importing Google Font 'Tangerine' for the body text */
 @import url('https://fonts.googleapis.com/css?family=Tangerine');
 
+/* Apply styles to the HTML element */
 html {
     min-height: 100%;
     position: relative;
     margin: 0;
 }
 
+/* Apply styles to the entire body */
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    font-family: 'Tangerine', serif;
+    font-family: 'Tangerine', serif; /* Use the 'Tangerine' font for text */
     margin: 0;
-    font-size: 58px;
-    text-shadow: 4px 4px 4px #aaa;
+    font-size: 58px; /* Set the font size to 58px */
+    text-shadow: 4px 4px 4px #aaa; /* Add a text shadow for a subtle effect */
 }
 
+/* Style the header element */
 header {
     text-align: center;
 }
 
+/* Style the footer element */
 footer {
     position: absolute;
     width: 100%;
@@ -29,13 +34,13 @@ footer {
     min-height: 80px;
     padding-top: 5px;
     text-align: center;
-    color: #fff;
-    background-color: #000;
+    color: #fff; /* Text color white */
+    background-color: #000; /* Background color black */
 }
 
+/* Style the .game-div section */
 .game-div {
-    flex: 1; /* This will allow the .game-div to expand and contract as needed */
-
+    flex: 1; /* Allow .game-div to expand and contract as needed */
     text-align: center;
     width: 90%;
     margin-left: auto;
@@ -43,6 +48,7 @@ footer {
     text-align: center;
 }
 
+/* Style the control buttons */
 .control {
     display: inline-block;
     margin: 20px;
@@ -50,34 +56,23 @@ footer {
     height: 80px;
 }
 
+/* Style the messages div */
 #messages {
     height: 1px;
 }
 
-#player-image {
-    width: inherit;
-    /* or any size you want */
-    height: auto;
-    /* make sure this maintains the aspect ratio */
+/* Style the player and computer images */
+#player-image, #computer-image {
+    width: inherit; /* Maintain image aspect ratio */
+    height: auto; /* Ensure the images cover the area without stretching */
     object-fit: cover;
-    /* this will ensure the images cover the area without stretching */
-
 }
 
-#computer-image {
-    width: inherit;
-    /* or any size you want */
-    height: auto;
-    /* make sure this maintains the aspect ratio */
-    object-fit: cover;
-    /* this will ensure the images cover the area without stretching */
-}
-
+/* Style the computer and player sections */
 .computer {
     background-color: lightblue;
     float: right;
     width: 35%;
-
 }
 
 .player {
@@ -85,95 +80,95 @@ footer {
     float: left;
     width: 35%;
 }
-#menu{
-  text-align: center;
-  align-items: center;
-  background-color: rgb(182, 196, 223);
-  color: white;
+
+/* Style the menu section */
+#menu {
+    text-align: center;
+    align-items: center;
+    background-color: rgb(182, 196, 223);
+    color: white;
 }
 
+/* Define a keyframe animation for the .winner class */
 @keyframes winnerAnimation {
     0%, 100% { transform: scale(1); }
     50% { transform: scale(1.1); }
 }
 
+/* Apply the winnerAnimation to elements with the .winner class */
 .winner {
     animation: winnerAnimation 0.5s ease-in-out;
 }
+
+/* Media query for screens with a maximum width of 1280px */
 @media only screen and (max-width: 1280px) {
-
-
-    
     .player {
         background-color: lightblue;
         float: left;
         width: 35%;
     }
     .scores {
-        flex: 1; 
+        flex: 1;
         min-height: 100px;
     }
-    footer{
-    width: 100%;
-    box-sizing: border-box;
-    min-height: 39px; 
-    padding-top: 5px;
-    text-align: center;
-    color: #fff;
-    background-color: #000; /* Set background color to black */
+    footer {
+        width: 100%;
+        box-sizing: border-box;
+        min-height: 39px;
+        padding-top: 5px;
+        text-align: center;
+        color: #fff;
+        background-color: #000;
     }
 }
 
+/* Media query for screens with a maximum width of 800px */
 @media only screen and (max-width: 800px) {
     body {
-        font-size: 20px; 
-        text-shadow: 2px 2px 2px #aaa;
+        font-size: 20px;
+        text-shadow: 2px 2px 2px #aaa; /* Adjust text shadow for smaller text */
     }
     .control {
         width: 60px;
         height: 20px;
         margin: 7px;
     }
-
     #player-image, #computer-image {
-        width: 60%; 
+        width: 60%; /* Adjust image size for smaller screens */
         height: auto;
     }
     #menu {
-        padding: 3px 0; 
+        padding: 3px 0;
     }
     .game-div {
-        margin-top:6%;
+        margin-top: 6%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
     .player, .computer {
         float: none;
-        width: 100%; 
+        width: 100%;
         background-color: lightblue;
-        margin-bottom: 20px; 
-        width: 100%; 
+        margin-bottom: 20px;
+        width: 100%;
         margin-top: 8%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center; 
+        align-items: center;
     }
-
     .scores {
-        flex: 1; /* Acest lucru va face ca elementele .scores să umple spațiul disponibil egal */
-        min-height: 100px; /* sau orice altă valoare care să mențină blocurile de aceeași înălțime */
+        flex: 1;
+        min-height: 100px;
     }
-    footer{
-    width: 100%;
-    box-sizing: border-box; /* Include padding and border in the width */
-    min-height: 39px; /* Minimum height for the footer */
-    padding-top: 5px; /* Padding at the top */
-    text-align: center; /* Center the text inside the footer */
-    color: #fff; /* Set text color to white */
-    background-color: #000; /* Set background color to black */
+    footer {
+        width: 100%;
+        box-sizing: border-box;
+        min-height: 39px;
+        padding-top: 5px;
+        text-align: center;
+        color: #fff;
+        background-color: #000;
     }
- 
 }

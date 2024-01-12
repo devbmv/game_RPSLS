@@ -1,26 +1,26 @@
-//===========================================================================================================
 // Retrieve all buttons with the class "control" and the "start" button
 const buttons = document.getElementsByClassName("control");
 const startButton = document.getElementsByClassName("start")[0]; // Assuming there's only one start button
-//===========================================================================================================
+
 // Get the DOM elements for player and computer scores
 const playerScore = document.getElementById("player-score");
 const computerScore = document.getElementById("computer-score");
-//===========================================================================================================
+
 // Get the DOM elements for displaying player and computer images
 const playerImg = document.getElementById("player-image");
 const computerImg = document.getElementById("computer-image");
-//===========================================================================================================
+
 // Get the DOM element for displaying messages to the player
 const msg = document.getElementById("messages");
-//===========================================================================================================
+
 // Define the possible choices in the game
 const choices = ["rock", "paper", "scissors", "lizard", "spock"];
-//===========================================================================================================
+
 // Set the score needed to win the game and game started flag
 let gameOverScore = 3;
 let gameStarted = false;
 let userName = "Player";
+
 // Add click event listener to the start button
 startButton.addEventListener("click", function () {
   if (gameStarted) {
@@ -34,18 +34,16 @@ startButton.addEventListener("click", function () {
   gameStarted = true;
 
   if (userName === "Player") {
-
-      let inputName = prompt("Please enter your name:");
-      if (inputName !== null) {
-        userName = inputName;
-      } 
-      if(userName.length==0){
-        userName = "Unnamed";
-      }
-
+    let inputName = prompt("Please enter your name:");
+    if (inputName !== null) {
+      userName = inputName;
+    } 
+    if(userName.length == 0){
+      userName = "Unnamed";
+    }
   }
   msg.style.color = "black";
-  msg.textContent = "Game Started! Make your choice.";
+  msg.innerHTML = " Make your choice";
 });
 
 // Add click event listeners to each control button
@@ -59,9 +57,7 @@ for (let button of buttons) {
     playGame(playerChoice);
   });
 }
-//===========================================================================================================
 
-//===========================================================================================================
 // Function to handle the game logic when a player makes a choice
 function playGame(playerChoice) {
   // Check if the game is over and announce the winner
@@ -70,9 +66,9 @@ function playGame(playerChoice) {
 
   if (playerScoreVal === gameOverScore || computerScoreVal === gameOverScore) {
     msg.textContent =
-      Number(playerScore.textContent) > Number(computerScore.textContent)
-        ? `${userName} Winner!!!`
-        : "Computer Winner!!!";
+      Number(playerScore.textContent) > Number(computerScore.textContent) ?
+      `${userName} Winner!!!` :
+      "Computer Winner!!!";
     msg.style.color = "red";
 
     return;
@@ -91,7 +87,7 @@ function playGame(playerChoice) {
     updateScores(result);
   }
 }
-//===========================================================================================================
+
 // Function to determine the winner of a round
 function checkWinner(player, computer) {
   // Conditions to determine the winner
@@ -143,10 +139,9 @@ function updateScores(result) {
 
   // Display the result of the round
   msg.textContent =
-    result === "draw"
-      ? "It's a draw!"
-      : result === "player"
-      ? `${userName} wins!`
-      : "Computer wins!";
+    result === "draw" ?
+    "It's a draw!" :
+    result === "player" ?
+    `${userName} wins!` :
+    "Computer wins!";
 }
-//===========================================================================================================
