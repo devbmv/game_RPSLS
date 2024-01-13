@@ -16,7 +16,7 @@ The main purpose of the application "Rock Paper Scissors Lizard Spock" is to off
 
 ### Feature 1: Start game BUTTON
 
-![start button screenshot](assets\images\screenshots\start-buton.JPG)
+![start button screenshot](assets/images/screenshots/start-buton.JPG)
 
 The "Start Game" button in the "Rock Paper Scissors Lizard Spock" web application serves as the initial point of interaction for users to begin their gaming experience. When clicked, this button initiates the game, prompting the player to make their first choice among Rock, Paper, Scissors, Lizard, or Spock. Designed for ease of use, the button is prominently placed and clearly labeled, ensuring that even first-time visitors can understand and engage with the game effortlessly. This feature enhances the user experience by providing a simple and direct way to dive into the game without navigating through complex menus or instructions.
 
@@ -24,7 +24,7 @@ The "Start Game" button in the "Rock Paper Scissors Lizard Spock" web applicatio
 
 ### Feature 2: Play buttons
 
-![Screenshot of play game buttons](assets\images\screenshots\game-buttons.JPG)
+![Screenshot of play game buttons](assets/images/screenshots/game-buttons.JPG)
 
 This feature presents the player with a choice of five buttons, each labeled with an option from the game "Rock Paper Scissors Lizard Spock." The player is prompted to select one of these options as their move in the game. The buttons are straightforward and clearly labeled "Rock," "Paper," "Scissors," "Lizard," and "Spock," making it easy for players to understand their choices. This interactive element is central to the gameplay, allowing players to engage in the strategic selection process that determines the outcome of the game against the computer or another player. The clean and minimalist design focuses the player's attention on the important task at hand: making their choice to compete in a round of the game.
 
@@ -32,7 +32,7 @@ This feature presents the player with a choice of five buttons, each labeled wit
 
 ### Feature 3: Shows who is winner
 
-![Screenshot of who is winner](assets\images\screenshots\show-who-is-winner.jpg)
+![Screenshot of who is winner](assets/images/screenshots/show-who-is-winner.jpg)
 
 This feature displays the outcome of a round in the "Rock Paper Scissors Lizard Spock" game. It clearly announces the winner of the round with a visual emphasis, in this case, highlighting that the computer has won. This announcement is coupled with the current scores for both the player and the computer, allowing players to easily track the progress of the game.
 
@@ -114,7 +114,7 @@ Manually tested the functionality of RPSLS web game project by interacting with 
 
 [HTML Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdevbmv.github.io%2Fgame_RPSLS%2F)<br>
 
-![Local Image](assets\images\screenshots\html-validator.JPG)<br>
+![Local Image](assets/images/screenshots/html-validator.JPG)<br>
 
   
 
@@ -124,7 +124,7 @@ Manually tested the functionality of RPSLS web game project by interacting with 
 
 [CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdevbmv.github.io%2Fgame_RPSLS%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=ru)<br>
 
-![Local patch](assets\images\screenshots\css-validator.JPG)<br>
+![Local patch](assets/images/screenshots/css-validator.JPG)<br>
 
   
 
@@ -138,7 +138,7 @@ Manually tested the functionality of RPSLS web game project by interacting with 
 
 [JS Validator](https://jshint.com/)<br>
 
-![Local Image](assets\images\screenshots\js-validator.JPG)<br>
+![Local Image](assets/images/screenshots/js-validator.JPG)<br>
 
   
 
@@ -184,7 +184,7 @@ Here are the Lighthouse scores from latest audit:
 
   
 
-![Lighthouse Audit](assets\images\screenshots\lighthouse-audit.JPG)
+![Lighthouse Audit](assets/images/screenshots/lighthouse-audit.JPG)
 
   
 
