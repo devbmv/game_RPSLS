@@ -13,16 +13,17 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    font-family: 'Tangerine', serif; /* Use the 'Tangerine' font for text */
+    font-family: 'Tangerine', serif;
+    /* Use the 'Tangerine' font for text */
     margin: 0;
-    font-size: 58px; /* Set the font size to 58px */
-    text-shadow: 4px 4px 4px #aaa; /* Add a text shadow for a subtle effect */
+    font-size: 58px;
+    /* Set the font size to 58px */
+    text-shadow: 4px 4px 4px #aaa;
+    /* Add a text shadow for a subtle effect */
 }
 
 /* Style the header element */
-header {
-    text-align: center;
-}
+
 
 /* Style the footer element */
 footer {
@@ -34,13 +35,16 @@ footer {
     min-height: 80px;
     padding-top: 5px;
     text-align: center;
-    color: #fff; /* Text color white */
-    background-color: #000; /* Background color black */
+    color: #fff;
+    /* Text color white */
+    background-color: #000;
+    /* Background color black */
 }
 
 /* Style the .game-div section */
 .game-div {
-    flex: 1; /* Allow .game-div to expand and contract as needed */
+    flex: 1;
+    /* Allow .game-div to expand and contract as needed */
     text-align: center;
     width: 90%;
     margin-left: auto;
@@ -62,9 +66,12 @@ footer {
 }
 
 /* Style the player and computer images */
-#player-image, #computer-image {
-    width: inherit; /* Maintain image aspect ratio */
-    height: auto; /* Ensure the images cover the area without stretching */
+#player-image,
+#computer-image {
+    width: inherit;
+    /* Maintain image aspect ratio */
+    height: auto;
+    /* Ensure the images cover the area without stretching */
     object-fit: cover;
 }
 
@@ -82,17 +89,26 @@ footer {
 }
 
 /* Style the menu section */
-#menu {
+header {
     text-align: center;
     align-items: center;
     background-color: rgb(182, 196, 223);
     color: white;
+    text-align: center;
+
 }
 
 /* Define a keyframe animation for the .winner class */
 @keyframes winnerAnimation {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.1); }
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
 }
 
 /* Apply the winnerAnimation to elements with the .winner class */
@@ -107,10 +123,12 @@ footer {
         float: left;
         width: 35%;
     }
+
     .scores {
         flex: 1;
         min-height: 100px;
     }
+
     footer {
         width: 100%;
         box-sizing: border-box;
@@ -120,33 +138,52 @@ footer {
         color: #fff;
         background-color: #000;
     }
+
+    #messages {
+        font-size: 80%;
+    }
 }
 
 /* Media query for screens with a maximum width of 800px */
 @media only screen and (max-width: 800px) {
+
     body {
         font-size: 20px;
-        text-shadow: 2px 2px 2px #aaa; /* Adjust text shadow for smaller text */
+        text-shadow: 2px 2px 2px #aaa;
+        /* Adjust text shadow for smaller text */
     }
+
     .control {
         width: 60px;
         height: 20px;
         margin: 7px;
     }
-    #player-image, #computer-image {
-        width: 60%; /* Adjust image size for smaller screens */
+
+    #player-image,
+    #computer-image {
+        width: 60%;
+        /* Adjust image size for smaller screens */
         height: auto;
     }
-    #menu {
-        padding: 3px 0;
+
+    header {
+        padding: 50px 0;
     }
+    header>button{
+        font-size: large;
+        background-color: rgb(247, 244, 244);
+    
+    }
+
     .game-div {
         margin-top: 6%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .player, .computer {
+
+    .player,
+    .computer {
         float: none;
         width: 100%;
         background-color: lightblue;
@@ -158,10 +195,12 @@ footer {
         justify-content: space-between;
         align-items: center;
     }
+
     .scores {
         flex: 1;
         min-height: 100px;
     }
+
     footer {
         width: 100%;
         box-sizing: border-box;
@@ -170,5 +209,9 @@ footer {
         text-align: center;
         color: #fff;
         background-color: #000;
+    }
+
+    body {
+        font-size: 160%;
     }
 }

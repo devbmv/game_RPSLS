@@ -243,9 +243,6 @@ During the development and deployment of the RPSLS game project, the following i
 
 Planned Adjustments: We are in the process of making further improvements to enhance readability and user experience.
 
-  
-
--  **Text Over**: Small range of screen sizes (width 800 to 980px) may have some text over the pictures.*Status : In Progres
 
   
 
