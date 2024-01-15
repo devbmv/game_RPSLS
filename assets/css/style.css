@@ -169,10 +169,11 @@ header {
     header {
         padding: 50px 0;
     }
-    header>button{
+
+    header>button {
         font-size: large;
         background-color: rgb(247, 244, 244);
-    
+
     }
 
     .game-div {

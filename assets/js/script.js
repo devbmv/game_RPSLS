@@ -50,7 +50,7 @@ startButton.addEventListener("click", function () {
 for (let button of buttons) {
   button.addEventListener("click", function () {
     if (!gameStarted) {
-      msg.textContent = "Please press  Start Game button first!";
+      msg.textContent = "Press  Start Button!";
       return;
     }
     let playerChoice = this.getAttribute("data-choice");
